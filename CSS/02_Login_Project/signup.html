@@ -4,16 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1a1a1a;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; 
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .card {
+        background-color: #d6d6d6;
+        padding: 10px;
+        border-radius: 8px;
+        width: 300px;
+      }
+      h2 {
+        color: #5900ff;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #d1d1d1;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        background-color: #5900ff;
+        border: none;
+        cursor: pointer;
+      }
+      .name {
+        display: flex;
+        gap: 10px;
+      }
+      .name input {
+        flex: 1;
+        min-width: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="card">
       <h2>Sign Up</h2>
       <form action="">
-        <input type="text" name="" id="" placeholder="First Name" />
-        <input type="text" name="" id="" placeholder="Last Name" />
+        <div class="name">
+          <input type="text" name="" id="" placeholder="First Name" />
+          <input type="text" name="" id="" placeholder="Last Name" />
+        </div>
         <input type="email" name="" id="" placeholder="Email" />
         <input type="password" name="" id="" placeholder="Password" />
-        <input type="button" value="Sign Up" />
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   </body>
