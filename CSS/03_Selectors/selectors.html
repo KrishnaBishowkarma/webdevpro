@@ -4,6 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selectors</title>
+    <style>
+      /* 1. Universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* 2. Type (element) selector */
+      P {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      /* 3. Class selector */
+      .highlight {
+        background-color: #21a2c9;
+      }
+
+      /* 4. ID selector */
+      #header {
+        background-color: #ff5050;
+      }
+
+      /* 5. Attribute selector */
+      input[type="text"] {
+        border: 1px solid #ff5050;
+      }
+
+      /* 6. Descendant selector */
+      article p {
+        font-style: italic;
+        background-color: #ff7373;
+        color: #fff;
+        padding: 10px;
+      }
+
+      /* 7. Child selector */
+      div > p {
+        background-color: #ff6363;
+      }
+
+      /* 8. Adjacent sibling selector */
+      h1 + p {
+        font-weight: bold;
+      }
+
+      /* 9. General sibling selector */
+      h2 ~ p {
+        color: #6e6cff;
+      }
+
+      /* 10. Pseudo-class selector */
+      a:hover {
+        background-color: #2ffe0f;
+        text-decoration: none;
+        color: #ff5050;
+        padding: 5px;
+        margin: 4px;
+      }
+
+      /* 11. Pseudo-element selector */
+      p::first-letter {
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* 12. Grouping Selector */
+      h1,
+      h2,
+      h3 {
+        color: #ff6363;
+      }
+    </style>
   </head>
   <body>
     <header id="header">This is a header</header>
@@ -28,17 +103,27 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
         pariatur?
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        pariatur?
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In aspernatur
+          assumenda nesciunt saepe ratione cupiditate neque, nulla officiis
+          facilis fuga.
+        </p>
+      </div>
     </article>
 
-    <ul>
-      <li>Direct child list item</li>
-      <li>
-        Another direct child
-        <ul>
-          <li>This is not a direct child of the first ul</li>
-        </ul>
-      </li>
-    </ul>
+    <div>
+      <p>I am a child</p>
+      <p>I am a child</p>
+      <selection>
+        <p>I am Descendant</p>
+      </selection>
+      <p>Paragraph 4 in the div.</p>
+    </div>
 
     <h2>Sub Heading</h2>
     <p>
