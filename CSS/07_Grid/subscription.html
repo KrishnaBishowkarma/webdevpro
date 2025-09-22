@@ -28,229 +28,150 @@
             gap: 30px;
             border-radius: 5px;
             background: linear-gradient(251deg, rgba(88, 7, 125, 0.20) 0.29%, rgba(25, 0, 255, 0.20) 99.71%), #1E212B;
-
         }
 
-        button {
-            margin-bottom: 46px;
-        }
-
-        .content .basic {
+        .plan {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             width: 240px;
             height: 427px;
             flex-shrink: 0;
             border-radius: 5px;
-            background: linear-gradient(180deg, rgba(70, 9, 255, 0.08) 0%, rgba(137, 1, 255, 0.20) 100%), #B1BEC9;
-
         }
 
-        span {
+        .basic {
+            background: linear-gradient(180deg, rgba(70, 9, 255, 0.08) 0%, rgba(137, 1, 255, 0.20) 100%), #B1BEC9;
+        }
+
+        .pro {
+            background: linear-gradient(180deg, rgba(255, 0, 0, 0.08) 0%, rgba(11, 182, 255, 0.20) 100%), #DBC9B6;
+        }
+
+        .premium {
+            background: linear-gradient(180deg, rgba(255, 191, 191, 0.08) 0%, rgba(255, 0, 221, 0.20) 100%), #FD9E40;
+        }
+
+        .plan-title {
             margin-top: 20px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+            letter-spacing: 0.5px;
+        }
+
+        .line {
+            margin-top: 3px;
+            /* 3px below the title */
+            border-radius: 5px;
+            background: #000;
         }
 
         .basic .line {
             width: 61px;
             height: 5px;
-            border-radius: 5px;
-            background: #000;
-            margin-bottom: 150px;
         }
 
         .pro .line {
             width: 39px;
             height: 5px;
-            border-radius: 5px;
-            background: #000;
-            margin-bottom: 100px;
         }
 
         .premium .line {
             width: 100px;
             height: 5px;
-            border-radius: 5px;
-            background: #000;
-            margin-bottom: 100px;
         }
 
-        .basic span {
-            color: #000;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+        .plan-middle {
+            flex: 1;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
-        .content .basic ul {
+        .plan ul {
             color: #000;
             font-family: Inter;
             font-size: 14px;
-            font-style: normal;
             font-weight: 400;
-            line-height: 203.899%;
-            /* 28.546px */
+            line-height: 2;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
         }
 
-
-        .basic button {
+        .plan button {
+            margin-bottom: 30px;
             width: 168px;
             height: 45px;
-            flex-shrink: 0;
             border-radius: 8px;
             border: 1px solid #000;
-            background: #D9D9D9;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: normal;
             color: #272727;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-
         }
 
-        .content .pro {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            width: 240px;
-            height: 427px;
-            flex-shrink: 0;
-            border-radius: 5px;
-            background: linear-gradient(180deg, rgba(255, 0, 0, 0.08) 0%, rgba(11, 182, 255, 0.20) 100%), #DBC9B6;
-        }
-
-        .content .pro span {
-            color: #000;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .content .pro ul {
-            color: #000;
-            font-family: Inter;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 203.899%;
-            /* 28.546px */
+        .basic button {
+            background: #D9D9D9;
         }
 
         .pro button {
-            width: 168px;
-            height: 45px;
-            flex-shrink: 0;
-            border-radius: 8px;
-            border: 1px solid #000;
             background: #FF9898;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            color: #272727;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .content .premium {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            width: 240px;
-            height: 427px;
-            flex-shrink: 0;
-            border-radius: 5px;
-            background: linear-gradient(180deg, rgba(255, 191, 191, 0.08) 0%, rgba(255, 0, 221, 0.20) 100%), #FD9E40;
-        }
-
-        .content .premium span {
-            color: #100;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .content .premium ul {
-            color: #000;
-            font-family: Inter;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 203.899%;
-            /* 28.546px */
         }
 
         .premium button {
-            width: 168px;
-            height: 45px;
-            flex-shrink: 0;
-            border-radius: 8px;
-            border: 1px solid #000;
             background: #F8D4FF;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            color: #272727;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
         }
     </style>
 </head>
 
 <body>
     <div class="content">
-        <div class="basic">
-            <span>Basic</span>
+        <div class="plan basic">
+            <div class="plan-title">Basic</div>
             <div class="line"></div>
-            <ul>
-                <li>5 Projects</li>
-                <li>10 GB Storage</li>
-                <li>Community Support</li>
-            </ul>
+            <div class="plan-middle">
+                <ul>
+                    <li>5 Projects</li>
+                    <li>10 GB Storage</li>
+                    <li>Community Support</li>
+                </ul>
+            </div>
             <button>Free</button>
         </div>
-        <div class="pro">
-            <span>Pro</span>
+        <div class="plan pro">
+            <div class="plan-title">Pro</div>
             <div class="line"></div>
-            <ul>
-                <li>Everything in Free</li>
-                <li>20 Projects</li>
-                <li>100 GB Storage</li>
-                <li>Priority Email Support</li>
-                <li>Custom Themes</li>
-            </ul>
-            <button>
-                $9/ month
-            </button>
-        </div>
-        <div class="premium">
-            <span>Premium</span>
-            <div class="line">
+            <div class="plan-middle">
+                <ul>
+                    <li>Everything in Free</li>
+                    <li>20 Projects</li>
+                    <li>100 GB Storage</li>
+                    <li>Priority Email Support</li>
+                    <li>Custom Themes</li>
+                </ul>
             </div>
-            <ul>
-                <li>Everything in Pro</li>
-                <li>Unlimited Projects</li>
-                <li>1 TB Storage</li>
-                <li>24/7 Support</li>
-                <li>Advanced Analytics</li>
-                </li>
-            </ul>
-            <button>
-                $19 / month
-            </button>
+            <button>$9 / month</button>
+        </div>
+        <div class="plan premium">
+            <div class="plan-title">Premium</div>
+            <div class="line"></div>
+            <div class="plan-middle">
+                <ul>
+                    <li>Everything in Pro</li>
+                    <li>Unlimited Projects</li>
+                    <li>1 TB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+            </div>
+            <button>$19 / month</button>
         </div>
     </div>
 </body>
